@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru" style="--color-active:rgb(242, 60, 49)">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap&_v=20220525091646" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20220525091646">
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js?_v=20220525091646"></script>
+	<title>Настрой часы! ⏰</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<canvas></canvas>
+			<div class="screen screen--start">
+				<button class="volume icon"></button>
+				<button class="group icon"></button>
+				<button class="play"></button>
+				<div class="bottom">
+					<button class="post icon"></button>
+					<div class="highscore">
+						<div class="highscore__text">0</div>
+					</div>
+					<button class="invite icon"></button>
+				</div>
+			</div>
+			<div class="screen screen--game hidden hidden--right">
+				<div class="top">
+					<div class="score">
+						<div class="score-value">0</div>
+						<div class="score-x hidden">
+							x<div>1</div>
+						</div>
+					</div>
+				</div>
+				<div class="time">
+					<div class="time__hour"></div>
+					<div class="time__minute"></div>
+					<div class="time__second"></div>
+					<div class="time__bar"></div>
+				</div>
+				<div class="tooltip"></div>
+				<div class="clock">
+					<div class="number" style="--deg:30deg">
+						<div>1</div>
+					</div>
+					<div class="number" style="--deg:60deg">
+						<div>2</div>
+					</div>
+					<div class="number" style="--deg:90deg">
+						<div>3</div>
+					</div>
+					<div class="number" style="--deg:120deg">
+						<div>4</div>
+					</div>
+					<div class="number" style="--deg:150deg">
+						<div>5</div>
+					</div>
+					<div class="number" style="--deg:180deg">
+						<div>6</div>
+					</div>
+					<div class="number" style="--deg:210deg">
+						<div>7</div>
+					</div>
+					<div class="number" style="--deg:240deg">
+						<div>8</div>
+					</div>
+					<div class="number" style="--deg:270deg">
+						<div>9</div>
+					</div>
+					<div class="number" style="--deg:300deg">
+						<div>10</div>
+					</div>
+					<div class="number" style="--deg:330deg">
+						<div>11</div>
+					</div>
+					<div class="number" style="--deg:0deg">
+						<div>12</div>
+					</div>
+					<div class="hour arrow" style="--deg:0deg"></div>
+					<div class="minute arrow" style="--deg:0deg"></div>
+					<div class="second arrow" style="--deg:0deg"></div>
+				</div>
+				<div class="training">
+					<div class="training__text"></div>
+				</div>
+			</div>
+			<div class="screen screen--end hidden hidden--right">
+				<div class="result">
+					<div class="result__number"></div>
+					<div class="result__record">Новый рекорд!</div>
+				</div>
+				<div class="bottom">
+					<button class="home icon"></button>
+					<button class="restart icon"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<script src="./js/index.min.js?_v=20220525091646"></script>
+</body>
+
+</html>
